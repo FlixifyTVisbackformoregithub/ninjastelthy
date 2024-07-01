@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flixify</title>
+    <style>
+        body {
+            font-family: 'AbeeZee', sans-serif;
+        }
+        h1 {
+            color: Red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            font-size: 20px; /* Adjust the font size as desired */
+        }
+    </style>
+</head>
+<body>
+    <h1>Flixify</h1>
+    <!-- Your other HTML content goes here -->
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flixify</title>
+    <style>
+        body {
+            font-family: 'AbeeZee', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: Red;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #333; /* Optional background color for the title */
+            padding: 10px;
+            text-align: center;
+        }
+        /* Add any other styles you need for your content */
+    </style>
+    <script>
+        document.addEventListener('mousemove', (event) => {
+            const title = document.querySelector('h1');
+            title.style.top = `${event.clientY}px`;
+            title.style.right = `${window.innerWidth - event.clientX}px`;
+        });
+    </script>
+</head>
+<body>
+    <h1>Flixify</h1>
+    <!-- Your other HTML content goes here -->
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: blue;
+            overflow-x: scroll;
+            white-space: nowrap;
+            margin: 0;
+            padding: 0;
+        }
+        .movie {
+            display: inline-block;
+            width: 200px;
+            height: 250px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .movie img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .movie-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="movie" data-url="https://drive.google.com/file/d/1X4KKLClyHK_yIa_mYqFd4K6s_tvRAD1_/preview">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoliStTYKq_es-9ghqHVMc-vhAP8pStUQGDg&s" alt="Movie 1">
+        <div class="movie-title">It - 1990</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1BhQDbp8lXDwS-Q-pq4axufeZI-5TklpR/preview">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvS_PQ4T7333Nm9RMSGqos8TAL8PmctIoVZg&s" alt="Movie 2">
+        <div class="movie-title">It 2017</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1vLFTFzlvu9TJXbcL40gnag9Xart3pKQI/preview">
+        <img src="https://greshamargus.com/wp-content/uploads/2019/10/20191004_080104-723x900.jpg" alt="Movie 2">
+        <div class="movie-title">It chapter 2</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1GLqywDPqfZSLmLAiKC8j2l0o52cAGP8S/preview">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg" alt="Movie 2">
+        <div class="movie-title">Oppenheimer</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1XY-7CDQHpnHlpZSM2CCD8ojJkngjEGrf/preview">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Jaws_soundtrack.jpg/220px-Jaws_soundtrack.jpg" alt="Movie 2">
+        <div class="movie-title">Jaws 1</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1RiflvrN3K23qw4BrUFExo1aLKinjGBEt/preview">
+        <img src="https://www.arthipo.com/image/cache/catalog/poster/movie/1-758/pfilm729-jaws-2_657102db-movie-film-posteri-1000x1000.webp" alt="Movie 2">
+        <div class="movie-title">Jaws 2</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1RiflvrN3K23qw4BrUFExo1aLKinjGBEt/preview">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xs_ECW1XaEUWZC_D89eQvRimvUkMkf-H7Q&s" alt="Movie 2">
+        <div class="movie-title">Jaws 3</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1OY7HZkep77B12l4wRYCN_D23gR9M2G9m/preview">
+        <img src="https://i.guim.co.uk/img/static/sys-images/Arts/Arts_/Pictures/2011/10/27/1319709451384/Harold-Ramis-Ernie-Hudson-007.jpg?width=465&dpr=1&s=none" alt="Movie 2">
+        <div class="movie-title">Ghostbusters 1</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1VPN-P5xWjbEHv-VtlzjryjyV-nx7Z_w_/preview">
+        <img src="https://i.guim.co.uk/img/static/sys-images/Arts/Arts_/Pictures/2011/10/27/1319709451384/Harold-Ramis-Ernie-Hudson-007.jpg?width=465&dpr=1&s=none" alt="Movie 2">
+        <div class="movie-title">Ghostbusters 2</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1dt6_4oEd0LvEqSt2npBi3Rj45ZhDnQTy/preview">
+        <img src="https://i.guim.co.uk/img/static/sys-images/Arts/Arts_/Pictures/2011/10/27/1319709451384/Harold-Ramis-Ernie-Hudson-007.jpg?width=465&dpr=1&s=none" alt="Movie 2">
+        <div class="movie-title">Ghostbusters 2016</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1xO3pVCArlPg2EGRctR_hikdBcAvzgCmO/preview">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d1/Ghostbusters_-_Afterlife_official_theatrical_poster.jpg" alt="Movie 2">
+        <div class="movie-title">Ghostbusters Afterlife</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/115NMznT9rm8LGZzRzE0OvgqCbP-_y-Ia/preview">
+        <img src="https://admin.esports.gg/wp-content/uploads/2024/02/msedge_35C9ipOM92-968x544.jpg" alt="Movie 2">
+        <div class="movie-title">Ghostbusters Frozen Empire</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1vyaF0DqnGnWq-wBvFGy9qlI0LhvMmiue/preview">
+        <img src="https://i.etsystatic.com/18242346/r/il/0e640a/3105585198/il_fullxfull.3105585198_gvkg.jpg" alt="Movie 2">
+        <div class="movie-title">Spiderman into the S.V</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/16nP21GFh_p9LNNW59oX2pMmTznKV43K4/preview">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Spider-Man_Homecoming_poster.jpg" alt="Movie 2">
+        <div class="movie-title">Spiderman Homecoming</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1y-KprOSjIBSNwL-k2ZMQ50Y0T4ZbgP32/preview">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/bd/Spider-Man_Far_From_Home_poster.jpg" alt="Movie 2">
+        <div class="movie-title">Spiderman Far From Home</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1XLkr2YEnq4pwMZ-8A5UXD4DI6vco-SGb/preview">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaf9Vyg6YYSiW2k_nK5YtrAJjRLknWpwpAA&s" alt="Movie 2">
+        <div class="movie-title">Spiderman No Way Home</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/14UuTkUeVYz8A8idhq59jElSZnX8MirZT/preview">
+        <img src="https://www.indiewire.com/wp-content/uploads/2024/03/MCDGOXK_WB039.jpg?w=600&h=337&crop=1" alt="Movie 2">
+        <div class="movie-title">Godzilla X Kong</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1ZwP0FLdFdAoeskqGvQYX5CwqEeSFWS1G/preview">
+        <img src="https://www.nme.com/wp-content/uploads/2016/09/backtothefuture-1.png" alt="Movie 2">
+        <div class="movie-title">Back To The Future</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/16A4hzHFTcNduq6F-u4zQw7iTha5aEKD-/preview">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Back_to_the_Future_Part_II.jpg" alt="Movie 2">
+        <div class="movie-title">Back To The Future 2</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1HaXeNylNfZXhRudGTNLUWtrN-oAmone4/preview">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/45/Sonic_the_Hedgehog_film_poster.jpg" alt="Movie 2">
+        <div class="movie-title">Sonic 1</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/13YPdlfR1BTzXfqwmfbzfiuPycjQsh0Yb/preview">
+        <img src="https://i2o.scdn.co/image/ab67706c0000cfa36d779d7c0bb16d5d93fa3fb5" alt="Movie 2">
+        <div class="movie-title">Sonic 2</div>
+</div>
+<div class="movie" data-url="https://drive.google.com/file/d/1GD7dmbbwf0tgmc_0Bt6Rq4qXV7KSTCMD/preview">
+        <img src="https://www.digitaltrends.com/wp-content/uploads/2022/11/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg?fit=220%2C220&p=1" alt="Movie 1">
+        <div class="movie-title">Wednesday EP1</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1Sv4hMQIoO3CZ7WbzuXOWa5c_NTv6wSLM/preview">
+        <img src="https://www.digitaltrends.com/wp-content/uploads/2022/11/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg?fit=220%2C220&p=1" alt=" alt="Movie 3">
+        <div class="movie-title">Wednesday EP3</div>
+    </div>
+    <div class="movie" data-url="https://drive.google.com/file/d/1uw2PCLsJ0DjfGi_-_VERVsqyY_hhkzQ6/preview">
+        <img src="https://www.digitaltrends.com/wp-content/uploads/2022/11/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg?fit=220%2C220&p=1" alt=""/>" alt="Movie 4">
+        <div class="movie-title">Wednesday EP4</div>
+    </div>
+ <div class="movie" data-url="https://drive.google.com/file/d/1HbBi8TcyeRkBvqBk5xSO9PSL3l7ZqNwE/preview">
+        <img src="https://www.digitaltrends.com/wp-content/uploads/2022/11/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg?fit=220%2C220&p=1" alt=""/>" alt="Movie 5">
+        <div class="movie-title">Wednesday EP5</div>
+    </div>
+</div>
+ <div class="movie" data-url="https://drive.google.com/file/d/1RsM-9eXikQboCFDfNEMg_KxYaXN07TDv/preview">
+        <img src="https://www.digitaltrends.com/wp-content/uploads/2022/11/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg?fit=220%2C220&p=1" alt=""/>" alt="Movie 6">
+        <div class="movie-title">Wednesday EP6</div>
+    </div>
+</div>
+ <div class="movie" data-url="https://drive.google.com/file/d/1rcYIsPla7mA-XfZ8cnn4Vn8B-UPVoPMc/preview">
+        <img src="https://www.digitaltrends.com/wp-content/uploads/2022/11/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg?fit=220%2C220&p=1" alt=""/>" alt="Movie 6">
+        <div class="movie-title">Wednesday EP7</div>
+</div>
+ <div class="movie" data-url="https://drive.google.com/file/d/13-JQKH6qDYi9tBMY1v_mHnfh_sMDDNxS/preview">
+        <img src="https://www.digitaltrends.com/wp-content/uploads/2022/11/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg?fit=220%2C220&p=1" alt=""/>" alt="Movie 6">
+        <div class="movie-title">Wednesday EP8</div>
+</div>
+ <div class="movie" data-url="https://drive.google.com/file/d/1SN5RE9ydgSxMs08IqtlLO95INGoRCcAE/preview">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp-mTSl9O_7gPNWdmtXwunF8nY0SqUtHnMhw&s"/>" alt="Movie 6">
+        <div class="movie-title">INSIDE OUT 2 EARLYACCESS</div>
+</div>
+ <div class="movie" data-url="https://drive.google.com/file/d/1_pQ3kbz_a8l3B7SKfdP9dYQwKax0WHUD/preview">
+        <img src="https://i.ytimg.com/vi/fN5j1MtGO2Q/maxresdefault.jpg"/>" alt="Movie 6">
+        <div class="movie-title">Terrifier 1</div>
+
+</div>
+ <div class="movie" data-url="https://drive.google.com/file/d/1_Jjo7rOcCkYt3UryVkV2XvTfrL4QvHTE/preview">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPOS14eax_iEN6qa6CTbn3r2uDDh6bOyGAUw&s"/>" alt="Movie 6">
+        <div class="movie-title">Terrifier 2</div>
+
+</div>
+ <div class="movie" data-url="https://drive.google.com/file/d/1yRM4WXMGQp0H0q6vhUiBQWSfi3vu-nZH/preview">
+        <img src="https://musicart.xboxlive.com/7/d9b15100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"/>" alt="Movie 6">
+        <div class="movie-title">Willy Wonka & T.C.F</div>
+</div>
+ <div class="movie" data-url="https://drive.google.com/file/d/1rd15pmJNI7jlu_vZoL2U6fgMuXfCoQHC/preview">
+        <img src="https://assets-prd.ignimgs.com/2023/11/06/wonka-ver18-xlg-button-1699310816628.jpg"/>" alt="Movie 6">
+        <div class="movie-title">Wonka</div>
+</div>
+ <div class="movie" data-url="https://drive.google.com/file/d/18YKNCTokG3B7ZWzCE3thunyDJMktLxnm/preview">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/76/Home_alone_poster.jpg"/>" alt="Movie 6">
+        <div class="movie-title">Home Alone 1</div>
+</div>
+ <div class="movie" data-url="https://drive.google.com/file/d/1Aj4Ys3ofogKhxEAMh6PUncpYF_OHZ_ZK/preview">
+        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/42B930D7157B92D0274A2C1B4DA7C7C36F21212DF5E00F5B627F9621F47FD9FF/scale?width=1200&amp;aspectRatio=1.78&amp;format=webp">
+        <div class="movie-title">Home Alone 2</div>
+    <!-- Add more movie divs with different URLs and titles -->
+
+    <script>
+        // Set the background image URL
+        var bgImageUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ENKA_z-DqMXUaR21lP-2CcMi__GsKbi3nQ&s';
+        document.body.style.backgroundImage = 'url(' + bgImageUrl + ')';
+        document.body.style.backgroundSize = 'cover';
+
+        // Function to open movies in fullscreen mode
+        function openMovie(url) {
+            const iframe = document.createElement('iframe');
+            iframe.src = url;
+            iframe.id = 'movieFrame';
+            iframe.frameBorder = 0;
+            iframe.scrolling = 'no';
+            iframe.style.width = '100vw';
+            iframe.style.height = '100vh';
+            iframe.style.position = 'fixed';
+            iframe.style.top = 0;
+            iframe.style.left = 0;
+            iframe.style.zIndex = 1000;
+
+            document.body.appendChild(iframe);
+            iframe.requestFullscreen();
+        }
+
+        // Event listener for clicking on movie thumbnails
+        const movieThumbnails = document.querySelectorAll('.movie');
+        movieThumbnails.forEach((thumbnail) => {
+            thumbnail.addEventListener('click', () => {
+                const movieUrl = thumbnail.getAttribute('data-url');
+                openMovie(movieUrl);
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #github-link {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+        }
+        #github-link img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <a id="github-link" href="your-github-url">
+        <img src="https://static-00.iconduck.com/assets.00/github-icon-2048x2048-eyd5tyuo.png" alt="GitHub">
+    </a>
+</body>
+</html>
+
+</body>
+</html>
