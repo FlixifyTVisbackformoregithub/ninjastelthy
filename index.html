@@ -7,7 +7,7 @@
             font-family: 'AbeeZee', sans-serif;
         }
         h1 {
-            color: Red;
+            color: black;
             position: absolute;
             top: 0;
             left: 0;
@@ -22,81 +22,55 @@
 </body>
 </html>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Flixify</title>
-    <style>
-        body {
-            font-family: 'AbeeZee', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            color: white;
-            position: fixed;
-            top: 0;
-            right: 0;
-            background-color: #333; /* Optional background color for the title */
-            padding: 10px;
-            text-align: center;
-        }
-        /* Add any other styles you need for your content */
-    </style>
-    <script>
-        document.addEventListener('mousemove', (event) => {
-            const title = document.querySelector('h1');
-            title.style.top = `${event.clientY}px`;
-            title.style.right = `${window.innerWidth - event.clientX}px`;
-        });
-    </script>
-</head>
-<body>
-    <h1>Flixify Organization TV</h1>
-    <!-- Your other HTML content goes here -->
 </body>
 </html>
-}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            background-color: blue;
-            overflow-x: scroll;
-            white-space: nowrap;
-            margin: 0;
-            padding: 0;
-        }
-        .movie {
-            display: inline-block;
-            width: 200px;
-            height: 250px;
-            margin: 10px;
-            border-radius: 10px;
-            background-color: #ffffff;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-        .movie img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .movie-title {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 10px;
-            font-size: 14px;
-            text-align: center;
-        }
+      body {
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie {
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
     </style>
 </head>
 <body>
@@ -316,10 +290,34 @@
 </head>
 <body>
     <a id="github-link" href="https://github.com/FlixifyTVisbackformoregithub/ninjastelthy">
-        <img src="https://static-00.iconduck.com/assets.00/github-icon-2048x2048-eyd5tyuo.png" alt="GitHub">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-sNoQiIxejobnP-a5t0_Eq00jQsz5nnSXcMksWiIWpArMMUM:https://assets.stickpng.com/images/5847f98fcef1014c0b5e48c0.png&s" alt="GitHub">
     </a>
 </body>
 </html>
 
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #myImage {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="myImage" src="https://images.vexels.com/media/users/3/299367/isolated/preview/50ac129fb016f89f1a7737d44729d187-theater-movie-tickets.png" onclick="openMovie()">
+
+    <script>
+        function openMovie() {
+            window.open('https://drive.google.com/file/d/1XLkr2YEnq4pwMZ-8A5UXD4DI6vco-SGb/preview', '_self');
+        }
+    </script>
 </body>
 </html>
