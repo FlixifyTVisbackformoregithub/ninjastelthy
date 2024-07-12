@@ -1,6 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: gray;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px; /* Adjust the size as needed */
+        }
+        .button-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .button-list button {
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" onclick="toggleModal()">Our other most used links</div>
+    <div class="modal" id="myModal">
+        <div class="button-list">
+            <button onclick="navigateTo('https://6-12-9-24-9-6-25.netlify.app/')">https://6-12-9-24-9-6-25.netlify.app/</button>
+            <button onclick="navigateTo('https://idontcare000.netlify.app/')">https://idontcare000.netlify.app/</button>
+            <button onclick="navigateTo('https://flixify000.netlify.app/')">https://flixify000.netlify.app/</button>
+            <!-- Add more buttons as needed -->
+        </div>
+    </div>
+    <script>
+        let modalOpen = false;
+
+        function toggleModal() {
+            const modal = document.getElementById('myModal');
+            modal.style.display = modalOpen ? 'none' : 'block';
+            modalOpen = !modalOpen;
+        }
+
+        function navigateTo(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flixify Television</title>
